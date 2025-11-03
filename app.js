@@ -8,7 +8,7 @@ const address = document.querySelector("#location");
 const status_text = document.querySelector("#status");
 const infoSection = document.querySelector("#infoSection");
 
-const apiKey = "46695e0320b14c229c754828251108"
+const apiKey = "46695e0320b14c229c754828251108" // we should use it secured place like .env file and add to .gitignore; I just add for learning purpose
 let city = "dhaka";
 
 
@@ -63,5 +63,6 @@ document.querySelector("form").addEventListener("submit", (event) => {
     city = input.value.trim();
     setWeatherInDisplay();
 })
+
 
 setWeatherInDisplay();
